@@ -78,8 +78,22 @@ function addGamePiece(pieceCode){
 	
 	if (inputCodeIndex != -1)/*<-- tests if the piece code is valid*/{
 		inventoryOfPiecesByIndex[inputCodeIndex] += 1; //<-- modifies inventory of valid tickets.
+        
+        document.getElementById("addPiece").value = "";
+        
+        var fillColor;
+        
+        if (inputCodeIndex >= 60 && inputCodeIndex <= 67){
+            fillColor = '#999'
+        } else {
+            
+        }
+        
+        document.getElementById(inputCodeIndex).style.backgroundColor = fillColor;
 	}
 	else {
 		alert("The code you entered is not a valid code.")
+        
 	}
+    document.getElementById("addPiece").focus();
 }

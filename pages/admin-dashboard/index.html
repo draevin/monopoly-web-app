@@ -30,6 +30,8 @@
 <!-- Gameboard css-->
 <link rel="stylesheet" type="text/css" href="../../assets/css/monopoly.css">
 
+<script src="MonopolyGame.js"></script>
+
 </head>
 
 <!-- Styles Ends -->
@@ -99,7 +101,7 @@
 						<p>Enter codes below to add pieces and fill out your gameboard.</p>
                         <form>
                             <input name="addPiece" id="addPiece" type="text" style="width:200px; margin: 10px"></br>
-						    <input type="button" class="btn btn-primary pmd-ripple-effect" style="padding: 8px; width: 200px" value="Add Piece">
+						    <input type="button" class="btn btn-primary pmd-ripple-effect" style="padding: 8px; width: 200px" value="Add Piece" onclick="addGamePiece(document.getElementById('addPiece').value)">
                         </form>
 					</div>
 				</div><!-- end no table found blank state-->
@@ -113,32 +115,32 @@
                             <td class="prizeCell">Prize 1
                                 <table>
                                     <tr>
-                                        <td class="pieceCell">Piece 1</td>
+                                        <td class="pieceCell" id="60">Piece 1</td>
                                     </tr>
                                     <tr>
-                                        <td class="pieceCell">Piece 2</td>
+                                        <td class="pieceCell" id="61">Piece 2</td>
                                     </tr>
                                     <tr>
-                                        <td class="pieceCell">Piece 3</td>
+                                        <td class="pieceCell" id="62">Piece 3</td>
                                     </tr>
                                     <tr>
-                                        <td class="pieceCell">Piece 4</td>
+                                        <td class="pieceCell" id="63">Piece 4</td>
                                     </tr>
                                 </table>
                             </td>
                             <td class="prizeCell">Prize 2
                                 <table>
                                     <tr>
-                                        <td class="pieceCell">Piece 1</td>
+                                        <td class="pieceCell" id="64">Piece 1</td>
                                     </tr>
                                     <tr>
-                                        <td class="pieceCell">Piece 2</td>
+                                        <td class="pieceCell" id="65">Piece 2</td>
                                     </tr>
                                     <tr>
-                                        <td class="pieceCell">Piece 3</td>
+                                        <td class="pieceCell" id="66">Piece 3</td>
                                     </tr>
                                     <tr>
-                                        <td class="pieceCell">Piece 4</td>
+                                        <td class="pieceCell" id="67">Piece 4</td>
                                     </tr>
                                 </table>
                             </td>
