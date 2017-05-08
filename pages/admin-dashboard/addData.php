@@ -9,7 +9,7 @@
       die('Could not connect:' . mysql_error());
    }
    
-   echo 'Connected successfully  <br />';
+//   echo 'Connected successfully  <br />';
 
 
 // TESTING
@@ -29,7 +29,7 @@ if(! $retval ) {
       die('Could not create database: ' . mysql_error());
    }
    
-   echo "Database players created successfully <br />";
+//   echo "Database players created successfully <br />";
    
     mysql_select_db('players'); //choose the database
 
@@ -48,9 +48,9 @@ email       varchar(90)
       die('Could not create table: ' . mysql_error());
    }
    
-   echo "Table player created successfully <br />";
+//   echo "Table player created successfully <br />";
    }  
-   echo "1 is good <br />";  
+//   echo "1 is good <br />";  
         //-------------use a database--------------------------------------------------------------   
       mysql_select_db('players'); //choose the database
 }
@@ -75,7 +75,7 @@ $retval = mysql_query( $sql, $conn);
    if(! $retval ) {
       die('Could not add data: ' . mysql_error());
    }  
-   echo "data has been added to the table player successfully <br />";   
+//   echo "data has been added to the table player successfully <br />";   
 
       mysql_close($conn);
 
@@ -87,4 +87,5 @@ $retval = mysql_query( $sql, $conn);
 //$headers = "From: webmaster@example.com" . "\r\n";
 ////mail("godrulesjmh@gmail.com", $sname ." ".$semail,$ssub."\n".$smessage, $headers);
 //mail('godrulesjmh@gmail.com', $ssub, $smessage);
+header('Location: thanks.html')
 ?>

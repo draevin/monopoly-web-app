@@ -83,10 +83,28 @@ function addGamePiece(pieceCode){
         
         var fillColor;
         
-        if (inputCodeIndex >= 60 && inputCodeIndex <= 67){
-            fillColor = '#999'
+        if (inputCodeIndex >= 0 && inputCodeIndex <=27) {
+            fillColor = '#888888'
+        } else if (inputCodeIndex >= 28 && inputCodeIndex <= 35){
+            fillColor = '#b5a38d';
+        } else if (inputCodeIndex >= 36 && inputCodeIndex <= 43){
+            fillColor = '#90cbe5';
+        } else if (inputCodeIndex >= 44 && inputCodeIndex <= 51){
+            fillColor = '#e590e3';
+        } else if (inputCodeIndex >= 52 && inputCodeIndex <= 59){
+            fillColor = '#e5b290';
+        } else if (inputCodeIndex >= 60 && inputCodeIndex <= 67){
+            fillColor = '#e59090';
+        } else if (inputCodeIndex >= 68 && inputCodeIndex <= 75){
+            fillColor = '#e5de90';
+        } else if (inputCodeIndex >= 76 && inputCodeIndex <= 83){
+            fillColor = '#95e590';
+        } else if (inputCodeIndex >= 82 && inputCodeIndex <= 91){
+            fillColor = '#90a3e5';
+        } else if (inputCodeIndex >= 92 && inputCodeIndex <= 138){
+            fillColor = '#fff082';
         } else {
-            
+            fillColor = '#a9a9a9';
         }
         
         document.getElementById(inputCodeIndex).style.backgroundColor = fillColor;
